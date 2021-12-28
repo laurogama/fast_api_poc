@@ -1,4 +1,5 @@
 # FastApi Poc
+![example workflow](https://github.com/laurogama/fast_api_todo/actions/workflows/workflow.yml/badge.svg)
 
 A FastApi POC following:
 
