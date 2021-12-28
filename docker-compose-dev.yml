@@ -2,14 +2,14 @@ version: '3.8'
 services:
   web:
     build:
-      context: ./api
+      context: ./src
       dockerfile: Dockerfile
-    command: python -m uvicorn main:app --host ${HOST} --reload
+    command: python -m uvicorn api.main:app --host ${HOST} --workers ${WORKERS} --reload
     ports:
       - "8000:8000"
     env_file: .env.dev
     volumes:
-      - ./api/:/usr/src/app/
+      - ./src/:/usr/src/app/
     depends_on:
       - db
   db:

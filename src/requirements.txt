@@ -2,5 +2,5 @@ coverage==6.2
 fastapi==0.70.1
 pydantic~=1.8.2
 pytest==6.2.5
-requests==2.26.0
+requests==2.26.0 # fastapi needs for TestClient
 uvicorn[standard]==0.16.0
