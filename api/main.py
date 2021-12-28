@@ -65,11 +65,6 @@ async def websocket_endpoint(websocket: WebSocket):
         await websocket.send_text(f"Message text was: {data}")
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
 @app.post("/items/")
 async def create_item(item: Item):
     return item

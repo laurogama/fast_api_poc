@@ -1,2 +1,5 @@
 .idea/
 .env.dev
+.coverage
+/api/htmlcov/
+/api/.pytest_cache/
